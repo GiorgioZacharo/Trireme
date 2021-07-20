@@ -51,7 +51,7 @@
 #define DEBUG_TYPE "AccelSeeker"
 
 #define HW_COST_AVG
-#define TASKS_LIST 
+//#define TASKS_LIST 
 //#define LOOP_LEVEL_PARALLELISM 
 
 #ifdef  LOOP_LEVEL_PARALLELISM 
@@ -87,7 +87,7 @@ namespace {
 
     level_file.open("level.txt");
     if(level_file.fail()) { // checks to see if file opended 
-      errs() << "error" << "\n";
+      errs() << "error_file" << "\n";
       return 1; // no point continuing if the file didn't open...
     }
     while(!level_file.eof()) {
@@ -137,21 +137,21 @@ namespace {
        std::string forbidden_string15 = "_Z12"; 		
 
        if (!isSystemCall(&F)){ 	// Uncomment to use the old Analysis Pass that iterates over all functions. 
-	  if (Function_Name.find(forbidden_string) == std::string::npos && 
-	  	Function_Name.find(forbidden_string2) == std::string::npos && 
-	  	Function_Name.find(forbidden_string3) == std::string::npos && 
-	  	Function_Name.find(forbidden_string4) == std::string::npos && 
-	  	Function_Name.find(forbidden_string5) == std::string::npos && 
-	  	Function_Name.find(forbidden_string6) == std::string::npos && 
-	  	Function_Name.find(forbidden_string7) == std::string::npos && 
-	  	Function_Name.find(forbidden_string8) == std::string::npos && 
-	  	Function_Name.find(forbidden_string9) == std::string::npos && 
-	  	Function_Name.find(forbidden_string10) == std::string::npos && 
-	  	Function_Name.find(forbidden_string11) == std::string::npos && 
-	  	Function_Name.find(forbidden_string12) == std::string::npos && 
-	  	Function_Name.find(forbidden_string13) == std::string::npos && 
-	  	Function_Name.find(forbidden_string14) == std::string::npos && 
-		Function_Name.find(forbidden_string15) == std::string::npos ) { // Checks whether forbidden string is subset of Candidate's name.
+//	  if (Function_Name.find(forbidden_string) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string2) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string3) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string4) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string5) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string6) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string7) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string8) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string9) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string10) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string11) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string12) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string13) == std::string::npos && 
+//	  	Function_Name.find(forbidden_string14) == std::string::npos && 
+//		Function_Name.find(forbidden_string15) == std::string::npos ) { // Checks whether forbidden string is subset of Candidate's name.
 	     errs() << "\n\n Function Name : " << F.getName() << "\n";
              errs() << "\n\n Initialize list with Funs : " << "\n";
              initFunctionList(&F);
@@ -160,7 +160,7 @@ namespace {
                errs() << GetValueName(Function_list[i]) << "\n";
             
              runOnFunctionLoop(&F, level); // Analysis Taking Place.
-	  }
+//	  }
 	}
 #endif
 

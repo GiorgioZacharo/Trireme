@@ -183,37 +183,37 @@ static std::string GetValueName(const Value *V) {
      else if (F->getName() == "intrapred_luma_16x16")  // Non synthesizable
       return true;
     
-    //else if (F->getName() == "total_zeros")  // Non synthesizable
-//	return true;
+    else if (F->getName() == "total_zeros")  // Non synthesizable
+	return true;
 
-   else if (GetValueName(F) == "@_GLOBAL__sub_I_hpvm_rt.cpp")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@__cxx_global_var_init")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@__cxx_global_var_init.1")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@__cxx_global_var_init.2")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZNSt6vectorI8DFGDepthSaIS0_EED2Ev")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZNSt6vectorI8DFGDepthSaIS0_EEC2Ev")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZNSt12_Vector_baseI8DFGDepthSaIS0_EE19_M_get_Tp_allocatorEv")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZSt8_DestroyIP8DFGDepthS0_EvT_S2_RSaIT0_E")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZNSt12_Vector_baseI8DFGDepthSaIS0_EED2Ev")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZNSt12_Vector_baseI8DFGDepthSaIS0_EE13_M_deallocateEPS0_m")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZNSt12_Vector_baseI8DFGDepthSaIS0_EE12_Vector_implD2Ev")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZNSaI8DFGDepthED2Ev")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "@_ZN9__gnu_cxx13new_allocatorI8DFGDepthED2Ev")  // Non synthesizable
-      return true;
-   else if (GetValueName(F) == "'@_ZNSt16allocator_traitsISaI8DFGDepthEE10deallocateERS1_PS0_m")  // Non synthesizable
-      return true;
+//   else if (GetValueName(F) == "@_GLOBAL__sub_I_hpvm_rt.cpp")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@__cxx_global_var_init")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@__cxx_global_var_init.1")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@__cxx_global_var_init.2")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZNSt6vectorI8DFGDepthSaIS0_EED2Ev")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZNSt6vectorI8DFGDepthSaIS0_EEC2Ev")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZNSt12_Vector_baseI8DFGDepthSaIS0_EE19_M_get_Tp_allocatorEv")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZSt8_DestroyIP8DFGDepthS0_EvT_S2_RSaIT0_E")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZNSt12_Vector_baseI8DFGDepthSaIS0_EED2Ev")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZNSt12_Vector_baseI8DFGDepthSaIS0_EE13_M_deallocateEPS0_m")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZNSt12_Vector_baseI8DFGDepthSaIS0_EE12_Vector_implD2Ev")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZNSaI8DFGDepthED2Ev")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "@_ZN9__gnu_cxx13new_allocatorI8DFGDepthED2Ev")  // Non synthesizable
+//      return true;
+//   else if (GetValueName(F) == "'@_ZNSt16allocator_traitsISaI8DFGDepthEE10deallocateERS1_PS0_m")  // Non synthesizable
+//      return true;
 
     else
       return false;

@@ -1,0 +1,29 @@
+digraph "@_ZN8MIT_HRTF3getEffPPf" {
+@_ZN8MIT_HRTF3getEffPPf[weight = 1, style = filled]
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @llvm.lifetime.start.p0i8 ; 
+@_Z16RadiansToDegreesf[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @_Z16RadiansToDegreesf ; 
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @llvm.lifetime.start.p0i8 ; 
+@_Z16RadiansToDegreesf[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @_Z16RadiansToDegreesf ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @_ZdlPv ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @_ZdlPv ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @_ZdlPv ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @llvm.lifetime.end.p0i8 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @llvm.lifetime.end.p0i8 ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @_ZdlPv ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @llvm.lifetime.end.p0i8 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @llvm.lifetime.end.p0i8 ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN8MIT_HRTF3getEffPPf -> @_ZdlPv ; 
+}

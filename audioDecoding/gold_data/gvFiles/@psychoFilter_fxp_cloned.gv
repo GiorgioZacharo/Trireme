@@ -1,0 +1,11 @@
+digraph "@psychoFilter_fxp_cloned" {
+@psychoFilter_fxp_cloned[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj[weight = 1, style = filled]
+@psychoFilter_fxp_cloned -> @_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj ; 
+@sqrt[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj -> @sqrt ; 
+@kiss_fftr[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj -> @kiss_fftr ; 
+@kiss_fftri[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj -> @kiss_fftri ; 
+}

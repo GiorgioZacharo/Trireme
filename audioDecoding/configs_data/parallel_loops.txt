@@ -1,0 +1,5 @@
+@rotateOrder3_fxp_cloned	1	NC	
+@FIR_right_fxp_cloned	2	NC
+@FIR_left_fxp_cloned	2	NC
+@rotateOrder2_fxp_cloned	1	NC	
+@rotateOrder1_fxp_cloned	1	NC	

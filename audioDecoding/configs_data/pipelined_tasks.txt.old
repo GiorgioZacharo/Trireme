@@ -1,0 +1,4 @@
+@setAndFFT_right_fxp_cloned	@FIR_right_fxp_cloned	@IFFT_right_fxp_cloned	@overlap_right_fxp_cloned
+@FIR_right_fxp_cloned	@IFFT_right_fxp_cloned	@overlap_right_fxp_cloned
+@setAndFFT_left_fxp_cloned	@FIR_left_fxp_cloned	@IFFT_left_fxp_cloned	@overlap_left_fxp_cloned
+@FIR_left_fxp_cloned	@IFFT_left_fxp_cloned	@overlap_left_fxp_cloned

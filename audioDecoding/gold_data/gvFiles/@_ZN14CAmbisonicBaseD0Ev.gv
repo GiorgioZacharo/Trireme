@@ -1,0 +1,5 @@
+digraph "@_ZN14CAmbisonicBaseD0Ev" {
+@_ZN14CAmbisonicBaseD0Ev[weight = 1, style = filled]
+@llvm.trap[weight = 1, style = filled]
+@_ZN14CAmbisonicBaseD0Ev -> @llvm.trap ; 
+}

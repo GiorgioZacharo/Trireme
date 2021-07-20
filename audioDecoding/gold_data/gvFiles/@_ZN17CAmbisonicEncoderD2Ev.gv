@@ -1,0 +1,7 @@
+digraph "@_ZN17CAmbisonicEncoderD2Ev" {
+@_ZN17CAmbisonicEncoderD2Ev[weight = 1, style = filled]
+@_ZdlPv[weight = 1, style = filled]
+@_ZN17CAmbisonicEncoderD2Ev -> @_ZdlPv ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN17CAmbisonicEncoderD2Ev -> @_ZdlPv ; 
+}

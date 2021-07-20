@@ -1,0 +1,33 @@
+@rotateOrder3_fxp_cloned-2	@rotateOrder2_fxp_cloned-2	@rotateOrder1_fxp_cloned-2	
+@rotateOrder3_fxp_cloned-4	@rotateOrder2_fxp_cloned-4	@rotateOrder1_fxp_cloned-4	
+@rotateOrder3_fxp_cloned-8	@rotateOrder2_fxp_cloned-8	@rotateOrder1_fxp_cloned-8	
+@FIR_right_fxp_cloned-2	@FIR_left_fxp_cloned-2	
+@FIR_right_fxp_cloned-4	@FIR_left_fxp_cloned-4	
+@FIR_right_fxp_cloned-8	@FIR_left_fxp_cloned-8	
+@FIR_left_fxp_cloned-2	@FIR_right_fxp_cloned-2	
+@FIR_left_fxp_cloned-4	@FIR_right_fxp_cloned-4	
+@FIR_left_fxp_cloned-8	@FIR_right_fxp_cloned-8	
+@FIR_left_fxp_cloned-2	
+@FIR_left_fxp_cloned-4	
+@FIR_left_fxp_cloned-8	
+@FIR_right_fxp_cloned-2	
+@FIR_right_fxp_cloned-4	
+@FIR_right_fxp_cloned-8	
+@rotateOrder2_fxp_cloned-2	@rotateOrder3_fxp_cloned-2	@rotateOrder1_fxp_cloned-2	
+@rotateOrder2_fxp_cloned-4	@rotateOrder3_fxp_cloned-4	@rotateOrder1_fxp_cloned-4	
+@rotateOrder2_fxp_cloned-8	@rotateOrder3_fxp_cloned-8	@rotateOrder1_fxp_cloned-8	
+@rotateOrder1_fxp_cloned-2	@rotateOrder3_fxp_cloned-2	@rotateOrder2_fxp_cloned-2	
+@rotateOrder1_fxp_cloned-4	@rotateOrder3_fxp_cloned-4	@rotateOrder2_fxp_cloned-4	
+@rotateOrder1_fxp_cloned-8	@rotateOrder3_fxp_cloned-8	@rotateOrder2_fxp_cloned-8	
+@FIR_left_fxp_cloned-2	
+@FIR_left_fxp_cloned-4	
+@FIR_left_fxp_cloned-8	
+@FIR_right_fxp_cloned-2	
+@FIR_right_fxp_cloned-4	
+@FIR_right_fxp_cloned-8	
+@FIR_left_fxp_cloned-2	
+@FIR_left_fxp_cloned-4	
+@FIR_left_fxp_cloned-8	
+@FIR_right_fxp_cloned-2	
+@FIR_right_fxp_cloned-4	
+@FIR_right_fxp_cloned-8	

@@ -1,0 +1,169 @@
+@_ZN8MIT_HRTFC2Ej 0 1 
+@_ZN8MIT_HRTF3getEffPPf 2 3 4 3 4 5 5 5 6 6 5 6 6 5 
+@_ZN14CAmbisonicBaseC2Ev 7 
+@_ZN14CAmbisonicBase8GetOrderEv 8 
+@_ZN14CAmbisonicBase9GetHeightEv 9 
+@_ZN14CAmbisonicBase15GetChannelCountEv 10 
+@_ZN14CAmbisonicBase9ConfigureEjbj 11 12 
+@_ZN16CAmbisonicSourceC2Ev 13 
+@_ZN16CAmbisonicSource9ConfigureEjbj 14 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 
+@_ZN16CAmbisonicSource5ResetEv 19 
+@_ZN16CAmbisonicSource7RefreshEv 20 21 22 21 22 21 22 22 22 23 21 23 21 23 22 23 
+@_ZN16CAmbisonicSource11SetPositionE10PolarPoint 24 
+@_ZN16CAmbisonicSource11GetPositionEv 25 
+@_ZN16CAmbisonicSource14SetOrderWeightEjf 26 
+@_ZN16CAmbisonicSource17SetOrderWeightAllEf 27 
+@_ZN16CAmbisonicSource14SetCoefficientEjf 28 
+@_ZN16CAmbisonicSource14GetOrderWeightEj 29 
+@_ZN16CAmbisonicSource14GetCoefficientEj 30 
+@_ZN16CAmbisonicSource7SetGainEf 31 
+@_ZN16CAmbisonicSource7GetGainEv 32 
+@_ZN8CBFormatC2Ev 33 
+@_ZN8CBFormat14GetSampleCountEv 34 
+@_ZN8CBFormat9ConfigureEjbj 35 12 36 17 18 16 5 37 38 
+@_ZN8CBFormat5ResetEv 39 
+@_ZN8CBFormat7RefreshEv 40 
+@_ZN8CBFormat12InsertStreamEPfjj 41 
+@_ZN8CBFormat13ExtractStreamEPfjj 42 
+@_ZN8CBFormataSERKS_ 43 
+@_ZN8CBFormateqERKS_ 44 
+@_ZN8CBFormatneERKS_ 45 
+@_ZN8CBFormatpLERKS_ 46 
+@_ZN8CBFormatmIERKS_ 47 
+@_ZN8CBFormatmLERKS_ 48 
+@_ZN8CBFormatdVERKS_ 49 
+@_ZN8CBFormatpLERKf 50 
+@_ZN8CBFormatmIERKf 51 
+@_ZN8CBFormatmLERKf 52 
+@_ZN8CBFormatdVERKf 53 
+@_ZN17CAmbisonicEncoderC2Ev 54 
+@_ZN17CAmbisonicEncoderD2Ev 55 5 5 
+@_ZN17CAmbisonicEncoderD0Ev 56 5 5 5 
+@_ZN17CAmbisonicEncoder9ConfigureEjbj 57 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 
+@_ZN17CAmbisonicEncoder7RefreshEv 58 20 21 22 21 22 21 22 22 22 23 21 23 21 23 22 23 
+@_ZN17CAmbisonicEncoder7ProcessEPfjP8CBFormat 59 
+@_ZN21CAmbisonicEncoderDistC2Ev 60 3 6 3 6 38 5 5 
+@_ZN21CAmbisonicEncoderDistD2Ev 61 38 5 5 
+@_ZN21CAmbisonicEncoderDistD0Ev 62 38 5 5 5 
+@_ZN21CAmbisonicEncoderDist9ConfigureEjbj 63 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 38 37 
+@_ZN21CAmbisonicEncoderDist5ResetEv 64 
+@_ZN21CAmbisonicEncoderDist7RefreshEv 65 20 21 22 21 22 21 22 22 22 23 21 23 21 23 22 23 66 
+@_ZN21CAmbisonicEncoderDist7ProcessEPfjP8CBFormat 67 
+@_ZN21CAmbisonicEncoderDist13SetRoomRadiusEf 68 
+@_ZN21CAmbisonicEncoderDist13GetRoomRadiusEv 69 
+@_ZN19CAmbisonicProcessorC2Ev 70 71 21 22 21 22 21 22 72 72 72 73 72 
+@_ZN11OrientationC2Efff 71 21 22 21 22 21 22 72 72 72 73 72 
+@_ZN19CAmbisonicProcessorD2Ev 74 38 38 38 38 38 38 38 
+@_ZN19CAmbisonicProcessorD0Ev 75 74 38 38 38 38 38 38 38 5 
+@_ZN19CAmbisonicProcessor9ConfigureEjbjj 76 12 38 37 37 37 37 37 37 37 37 38 5 38 5 38 5 
+@_ZN19CAmbisonicProcessor5ResetEv 77 
+@_ZN19CAmbisonicProcessor7RefreshEv 78 21 22 21 22 21 22 21 22 21 22 21 22 21 22 21 22 21 22 
+@_ZN19CAmbisonicProcessor14SetOrientationE11Orientation 79 
+@_ZN19CAmbisonicProcessor14GetOrientationEv 80 
+@_ZN19CAmbisonicProcessor7ProcessEP8CBFormatj 81 82 83 84 85 86 87 88 89 89 
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj 82 83 84 85 
+@_ZN19CAmbisonicProcessor16ProcessOrder1_3DEP8CBFormatj 86 
+@_ZN19CAmbisonicProcessor16ProcessOrder2_3DEP8CBFormatj 87 
+@_ZN19CAmbisonicProcessor16ProcessOrder3_3DEP8CBFormatj 88 89 89 
+@_ZN17CAmbisonicSpeakerC2Ev 90 
+@_ZN17CAmbisonicSpeakerD2Ev 91 5 5 
+@_ZN17CAmbisonicSpeakerD0Ev 92 5 5 5 
+@_ZN17CAmbisonicSpeaker9ConfigureEjbj 93 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 
+@_ZN17CAmbisonicSpeaker7RefreshEv 94 20 21 22 21 22 21 22 22 22 23 21 23 21 23 22 23 
+@_ZN17CAmbisonicSpeaker7ProcessEP8CBFormatjPf 95 83 96 83 
+@_ZN17CAmbisonicDecoderC2Ev 97 
+@_ZN17CAmbisonicDecoderD2Ev 98 5 5 38 
+@_ZN17CAmbisonicDecoderD0Ev 99 5 5 38 5 
+@_ZN17CAmbisonicDecoder9ConfigureEjbij 100 12 101 5 5 38 37 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 37 102 102 37 102 102 102 37 102 102 102 102 37 102 102 102 102 102 37 102 37 102 37 102 37 102 37 102 37 102 37 102 102 102 102 37 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 37 102 102 102 102 37 102 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 103 
+@_ZN17CAmbisonicDecoder12SpeakerSetUpEij 101 5 5 38 37 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 37 102 102 37 102 102 102 37 102 102 102 102 37 102 102 102 102 102 37 102 37 102 37 102 37 102 37 102 37 102 37 102 102 102 102 37 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 37 102 102 102 102 37 102 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 103 
+@_ZN17CAmbisonicDecoder5ResetEv 104 
+@_ZN17CAmbisonicDecoder7RefreshEv 105 
+@_ZN17CAmbisonicDecoder7ProcessEP8CBFormatjPPf 106 83 96 
+@_ZN17CAmbisonicDecoder15GetSpeakerSetUpEv 107 
+@_ZN17CAmbisonicDecoder15GetSpeakerCountEv 108 
+@_ZN17CAmbisonicDecoder11SetPositionEj10PolarPoint 109 
+@_ZN17CAmbisonicDecoder11GetPositionEj 110 
+@_ZN17CAmbisonicDecoder14SetOrderWeightEjjf 111 
+@_ZN17CAmbisonicDecoder14GetOrderWeightEjj 112 
+@_ZN17CAmbisonicDecoder14GetCoefficientEjj 113 
+@_ZN17CAmbisonicDecoder14SetCoefficientEjjf 114 
+@_ZN16CAmbisonicZoomerC2Ev 115 
+@_ZN16CAmbisonicZoomer9ConfigureEjbj 116 12 12 101 5 5 38 37 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 37 102 102 37 102 102 102 37 102 102 102 102 37 102 102 102 102 102 37 102 37 102 37 102 37 102 37 102 37 102 37 102 102 102 102 37 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 37 102 102 102 102 37 102 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 103 37 38 37 38 37 38 83 96 
+@_ZN16CAmbisonicZoomer9factorialEj 117 
+@_ZN16CAmbisonicZoomer5ResetEv 118 
+@_ZN16CAmbisonicZoomer7RefreshEv 119 103 
+@_ZN16CAmbisonicZoomer7SetZoomEf 120 3 6 
+@_ZN16CAmbisonicZoomer7GetZoomEv 121 
+@_ZN16CAmbisonicZoomer7ProcessEP8CBFormatj 122 66 66 
+@_ZN22CAmbisonicBinauralizerC2Ev 123 
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE 124 125 3 126 6 5 5 5 12 3 37 37 37 37 37 37 83 96 3 3 6 3 6 20 21 22 21 22 21 22 22 22 23 21 23 21 23 22 23 66 66 66 66 66 38 38 38 5 5 6 5 5 6 6 6 38 38 38 38 37 
+@_ZN22CAmbisonicBinauralizer7getHRTFEjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE 127 18 5 
+@_ZN22CAmbisonicBinauralizer5ResetEv 128 
+@_ZN22CAmbisonicBinauralizer7RefreshEv 129 
+@_ZN22CAmbisonicBinauralizer7ProcessEP8CBFormatPPf 130 84 85 84 85 
+@_ZN22CAmbisonicBinauralizer15ArrangeSpeakersEv 131 132 133 134 135 133 134 135 136 137 12 101 5 5 38 37 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 37 102 102 37 102 102 102 37 102 102 102 102 37 102 102 102 102 102 37 102 37 102 37 102 37 102 37 102 37 102 37 102 102 102 102 37 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 37 102 102 102 102 37 102 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 103 
+@_ZN22CAmbisonicBinauralizer15AllocateBuffersEv 138 36 17 18 16 5 36 17 18 16 5 36 17 18 16 5 36 17 18 16 5 36 17 18 16 5 139 140 141 142 139 140 141 142 38 143 17 18 38 5 38 37 38 38 143 17 18 38 5 37 38 37 
+@_ZN12ILLIXR_AUDIO5SoundC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEjb 144 18 3 145 18 35 12 36 17 18 16 5 37 38 18 6 5 5 6 
+@_ZN12ILLIXR_AUDIO5Sound9setSrcPosER10PolarPoint 146 
+@_ZN12ILLIXR_AUDIO5Sound9setSrcAmpEf 147 
+@_ZN12ILLIXR_AUDIO5Sound13readInBFormatEv 148 3 145 67 6 
+@_ZN12ILLIXR_AUDIO5SoundD2Ev 149 140 141 142 
+@__clang_call_terminate 140 141 142 
+@_ZN12ILLIXR_AUDIO7ABAudioC2ENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEENS0_11ProcessTypeE 150 18 3 151 6 5 18 18 18 3 5 5 5 5 18 71 21 22 21 22 21 22 72 72 72 73 72 76 12 38 37 37 37 37 37 37 37 37 38 5 38 5 38 5 18 116 12 12 101 5 5 38 37 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 37 102 102 37 102 102 102 37 102 102 102 102 37 102 102 102 102 102 37 102 37 102 37 102 37 102 37 102 37 102 37 102 102 102 102 37 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 102 37 102 102 102 102 37 102 37 12 3 15 16 16 16 17 18 16 16 5 6 3 15 16 16 16 17 18 16 16 5 6 103 37 38 37 38 37 38 83 96 6 6 
+@_ZN12ILLIXR_AUDIO7ABAudio17generateWAVHeaderEv 152 3 151 6 
+@_ZN12ILLIXR_AUDIO7ABAudioD2Ev 153 
+@_ZN12ILLIXR_AUDIO7ABAudio10loadSourceEv 154 18 3 6 5 18 16 5 18 3 6 5 18 16 5 5 5 18 3 6 5 18 16 5 5 5 
+@_ZN12ILLIXR_AUDIO7ABAudio12processBlockEv 155 37 37 37 3 38 5 6 38 38 38 38 5 6 
+@_ZN12ILLIXR_AUDIO7ABAudio11readNEncodeER8CBFormat 156 3 145 67 6 
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat 157 3 71 21 22 21 22 21 22 72 72 72 73 72 6 82 83 84 85 86 87 88 89 89 22 3 3 6 6 66 66 
+@_ZN12ILLIXR_AUDIO7ABAudio9writeFileEPPf 158 3 3 6 6 3 3 6 6 3 3 151 151 6 6 
+@_ZN8CBFormatD2Ev 159 38 5 
+@_ZN12ILLIXR_AUDIO7ABAudio14updateRotationEv 160 3 71 21 22 21 22 21 22 72 72 72 73 72 6 
+@_ZN12ILLIXR_AUDIO7ABAudio10updateZoomEv 161 22 3 3 6 6 
+@main 162 133 163 133 133 133 133 164 3 5 165 166 167 153 6 5 168 168 168 168 168 168 168 168 168 168 169 170 171 171 171 171 171 171 171 171 171 171 172 172 172 172 172 172 172 172 172 172 153 6 
+@_ZN8MIT_HRTFD0Ev 173 5 
+@_ZN14CAmbisonicBaseD2Ev 174 
+@_ZN14CAmbisonicBaseD0Ev 175 176 
+@_ZN16CAmbisonicSourceD2Ev 177 5 5 
+@_ZN16CAmbisonicSourceD0Ev 178 5 5 5 
+@_ZN8CBFormatD0Ev 179 38 5 5 
+@_ZN16CAmbisonicZoomerD2Ev 180 38 38 38 5 5 38 
+@_ZN16CAmbisonicZoomerD0Ev 181 180 38 38 38 5 5 38 5 
+@_ZN22CAmbisonicBinauralizerD2Ev 182 5 5 5 5 38 38 5 140 141 142 140 141 142 5 5 38 38 5 5 
+@_ZN22CAmbisonicBinauralizerD0Ev 183 182 5 5 5 5 38 38 5 140 141 142 140 141 142 5 5 38 38 5 5 5 
+@_ZN4HRTFD2Ev 184 
+@_ZNSt6vectorIfSaIfEE14_M_fill_insertEN9__gnu_cxx17__normal_iteratorIPfS1_EEmRKf 15 16 16 16 17 18 16 16 5 
+@_ZNSt6vectorIfSaIfEE17_M_default_appendEm 36 17 18 16 5 
+@_ZNSt6vectorISt10unique_ptrIA_12kiss_fft_cpxSt14default_deleteIS2_EESaIS5_EE17_M_default_appendEm 143 17 18 38 5 
+@_GLOBAL__sub_I_main.cpp 185 186 187 
+@rotatorSet_fxp_cloned 188 3 71 21 22 21 22 21 22 72 72 72 73 72 6 
+@wrapperRotatorSet_fxp_cloned 189 190 191 191 192 
+@psychoFilter_fxp_cloned 193 82 83 84 85 
+@wrapperPsychoFilter_fxp_cloned 194 190 191 191 191 191 191 191 191 191 191 191 191 192 192 192 192 192 192 192 
+@rotateOrder1_fxp_cloned 195 
+@wrapperRotateOrder1_fxp_cloned 196 190 191 191 191 191 191 192 
+@rotateOrder2_fxp_cloned 197 
+@wrapperRotateOrder2_fxp_cloned 198 190 191 191 191 191 191 192 
+@rotateOrder3_fxp_cloned 199 89 89 
+@wrapperRotateOrder3_fxp_cloned 200 190 191 191 191 191 191 192 
+@zoomSet_fxp_cloned 201 22 3 3 6 6 
+@wrapperZoomSet_fxp_cloned 202 190 191 191 192 
+@zoomProcess_fxp_cloned 203 66 66 
+@wrapperZoomProcess_fxp_cloned 204 190 191 191 191 191 191 191 191 191 191 191 191 192 192 
+@setAndFFT_left_fxp_cloned 205 84 
+@wrapperSetAndFFT_left_fxp_cloned 206 190 191 191 191 191 192 
+@setAndFFT_right_fxp_cloned 207 84 
+@wrapperSetAndFFT_right_fxp_cloned 208 190 191 191 191 191 192 
+@FIR_left_fxp_cloned 209 
+@wrapperFIR_left_fxp_cloned 210 190 191 191 192 
+@FIR_right_fxp_cloned 211 
+@wrapperFIR_right_fxp_cloned 212 190 191 191 192 
+@IFFT_left_fxp_cloned 213 85 
+@wrapperIFFT_left_fxp_cloned 214 190 191 191 192 
+@IFFT_right_fxp_cloned 215 85 
+@wrapperIFFT_right_fxp_cloned 216 190 191 191 192 
+@overlap_left_fxp_cloned 217 
+@wrapperOverlap_left_fxp_cloned 218 190 191 191 191 191 192 
+@overlap_right_fxp_cloned 219 
+@wrapperOverlap_right_fxp_cloned 220 190 191 191 191 191 192 
+@audioDecoding_cloned 221 190 190 190 190 190 190 190 190 190 190 190 190 190 190 190 191 191 191 222 191 191 191 191 191 191 191 191 191 191 222 191 191 222 191 222 191 191 222 191 222 191 191 222 191 191 191 222 191 222 191 191 222 191 222 191 222 191 191 191 222 191 191 191 222 191 222 191 222 191 222 191 222 191 222 191 191 191 222 191 191 

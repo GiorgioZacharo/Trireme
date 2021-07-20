@@ -1,0 +1,37 @@
+digraph "@_ZN21CAmbisonicEncoderDist7RefreshEv" {
+@_ZN21CAmbisonicEncoderDist7RefreshEv[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv[weight = 1, style = filled]
+@_ZN21CAmbisonicEncoderDist7RefreshEv -> @_ZN16CAmbisonicSource7RefreshEv ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@powf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @powf ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@powf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @powf ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@powf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @powf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@powf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @powf ; 
+@llvm.fabs.f32[weight = 1, style = filled]
+@_ZN21CAmbisonicEncoderDist7RefreshEv -> @llvm.fabs.f32 ; 
+}

@@ -1,0 +1,9 @@
+digraph "@_ZN12ILLIXR_AUDIO7ABAudio17generateWAVHeaderEv" {
+@_ZN12ILLIXR_AUDIO7ABAudio17generateWAVHeaderEv[weight = 1, style = filled]
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio17generateWAVHeaderEv -> @llvm.lifetime.start.p0i8 ; 
+@_ZNSo5writeEPKcl[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio17generateWAVHeaderEv -> @_ZNSo5writeEPKcl ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio17generateWAVHeaderEv -> @llvm.lifetime.end.p0i8 ; 
+}

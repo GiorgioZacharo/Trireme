@@ -1,0 +1,11 @@
+digraph "@_ZN12ILLIXR_AUDIO7ABAudio11readNEncodeER8CBFormat" {
+@_ZN12ILLIXR_AUDIO7ABAudio11readNEncodeER8CBFormat[weight = 1, style = filled]
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11readNEncodeER8CBFormat -> @llvm.lifetime.start.p0i8 ; 
+@_ZNSi4readEPcl[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11readNEncodeER8CBFormat -> @_ZNSi4readEPcl ; 
+@_ZN21CAmbisonicEncoderDist7ProcessEPfjP8CBFormat[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11readNEncodeER8CBFormat -> @_ZN21CAmbisonicEncoderDist7ProcessEPfjP8CBFormat ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11readNEncodeER8CBFormat -> @llvm.lifetime.end.p0i8 ; 
+}

@@ -1,0 +1,135 @@
+digraph "@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE" {
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE[weight = 1, style = filled]
+@_ZSt19__throw_logic_errorPKc[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZSt19__throw_logic_errorPKc ; 
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.start.p0i8 ; 
+@_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_createERmm ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.end.p0i8 ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdlPv ; 
+%17[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> %17 ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdlPv ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdlPv ; 
+@_Z17OrderToComponentsjb[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_Z17OrderToComponentsjb ; 
+%29[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> %29 ; 
+%31[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> %31 ; 
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.start.p0i8 ; 
+@_Znam[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_Znam ; 
+@_Znam[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_Znam ; 
+@_Znam[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_Znam ; 
+@_Znam[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_Znam ; 
+@_Znam[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_Znam ; 
+@_Znam[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_Znam ; 
+%50[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> %50 ; 
+%51[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> %51 ; 
+%55[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> %55 ; 
+@sqrt[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @sqrt ; 
+@llvm.floor.f64[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.floor.f64 ; 
+%180[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> %180 ; 
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.start.p0i8 ; 
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.start.p0i8 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.end.p0i8 ; 
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.start.p0i8 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.end.p0i8 ; 
+@_ZN16CAmbisonicSource7RefreshEv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZN16CAmbisonicSource7RefreshEv ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@powf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @powf ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@powf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @powf ; 
+@cosf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @cosf ; 
+@powf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @powf ; 
+@sinf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @sinf ; 
+@powf[weight = 1, style = filled]
+@_ZN16CAmbisonicSource7RefreshEv -> @powf ; 
+@llvm.fabs.f32[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.fabs.f32 ; 
+@llvm.fabs.f32[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.fabs.f32 ; 
+@llvm.fabs.f32[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.fabs.f32 ; 
+@llvm.fabs.f32[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.fabs.f32 ; 
+@llvm.fabs.f32[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.fabs.f32 ; 
+@_ZdaPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdaPv ; 
+@_ZdaPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdaPv ; 
+@_ZdaPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdaPv ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdlPv ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdlPv ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.end.p0i8 ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdlPv ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdlPv ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.end.p0i8 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.end.p0i8 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @llvm.lifetime.end.p0i8 ; 
+@_ZdaPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdaPv ; 
+@_ZdaPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdaPv ; 
+@_ZdaPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdaPv ; 
+@_ZdaPv[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_ZdaPv ; 
+@_Znam[weight = 1, style = filled]
+@_ZN22CAmbisonicBinauralizer9ConfigureEjbjjRjNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE -> @_Znam ; 
+}

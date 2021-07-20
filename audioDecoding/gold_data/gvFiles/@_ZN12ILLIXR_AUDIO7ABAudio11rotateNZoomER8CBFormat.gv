@@ -1,0 +1,67 @@
+digraph "@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat" {
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat[weight = 1, style = filled]
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @llvm.lifetime.start.p0i8 ; 
+@_ZN11OrientationC2Efff[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @_ZN11OrientationC2Efff ; 
+@cosf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @sinf ; 
+@cosf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @sinf ; 
+@cosf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @sinf ; 
+@atan2[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @atan2 ; 
+@atan2[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @atan2 ; 
+@atan2[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @atan2 ; 
+@acos[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @acos ; 
+@atan2[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @atan2 ; 
+%6[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> %6 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @llvm.lifetime.end.p0i8 ; 
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj ; 
+@sqrt[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj -> @sqrt ; 
+@kiss_fftr[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj -> @kiss_fftr ; 
+@kiss_fftri[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ShelfFilterOrderEP8CBFormatj -> @kiss_fftri ; 
+@_ZN19CAmbisonicProcessor16ProcessOrder1_3DEP8CBFormatj[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @_ZN19CAmbisonicProcessor16ProcessOrder1_3DEP8CBFormatj ; 
+@_ZN19CAmbisonicProcessor16ProcessOrder2_3DEP8CBFormatj[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @_ZN19CAmbisonicProcessor16ProcessOrder2_3DEP8CBFormatj ; 
+@_ZN19CAmbisonicProcessor16ProcessOrder3_3DEP8CBFormatj[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @_ZN19CAmbisonicProcessor16ProcessOrder3_3DEP8CBFormatj ; 
+@pow[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ProcessOrder3_3DEP8CBFormatj -> @pow ; 
+@pow[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessor16ProcessOrder3_3DEP8CBFormatj -> @pow ; 
+@sinf[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @sinf ; 
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @llvm.lifetime.start.p0i8 ; 
+@llvm.lifetime.start.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @llvm.lifetime.start.p0i8 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @llvm.lifetime.end.p0i8 ; 
+@llvm.lifetime.end.p0i8[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @llvm.lifetime.end.p0i8 ; 
+%19[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> %19 ; 
+@llvm.fabs.f32[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @llvm.fabs.f32 ; 
+@llvm.fabs.f32[weight = 1, style = filled]
+@_ZN12ILLIXR_AUDIO7ABAudio11rotateNZoomER8CBFormat -> @llvm.fabs.f32 ; 
+}

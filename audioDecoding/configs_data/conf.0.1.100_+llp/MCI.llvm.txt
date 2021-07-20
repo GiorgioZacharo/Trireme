@@ -1,0 +1,11 @@
+audiodecoder @zoomProcess_fxp_cloned 125312840 1288 199,66
+audiodecoder @psychoFilter_fxp_cloned 124978940 2561 189,83
+audiodecoder @rotateOrder3_fxp_cloned 79464480 1574 195,90
+audiodecoder @FIR_right_fxp_cloned 64097920 278 207
+audiodecoder @FIR_left_fxp_cloned 64097920 278 205
+audiodecoder @IFFT_right_fxp_cloned 38229120 1352 211
+audiodecoder @IFFT_left_fxp_cloned 38229120 1352 209
+audiodecoder @rotateOrder2_fxp_cloned 32345600 694 193
+audiodecoder @rotateOrder1_fxp_cloned 10311620 305 191
+audiodecoder @overlap_right_fxp_cloned 3557720 2234 215
+audiodecoder @overlap_left_fxp_cloned 3557720 2250 213

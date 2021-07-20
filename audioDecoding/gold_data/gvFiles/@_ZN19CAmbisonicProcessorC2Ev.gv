@@ -1,0 +1,27 @@
+digraph "@_ZN19CAmbisonicProcessorC2Ev" {
+@_ZN19CAmbisonicProcessorC2Ev[weight = 1, style = filled]
+@_ZN11OrientationC2Efff[weight = 1, style = filled]
+@_ZN19CAmbisonicProcessorC2Ev -> @_ZN11OrientationC2Efff ; 
+@cosf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @sinf ; 
+@cosf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @sinf ; 
+@cosf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @cosf ; 
+@sinf[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @sinf ; 
+@atan2[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @atan2 ; 
+@atan2[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @atan2 ; 
+@atan2[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @atan2 ; 
+@acos[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @acos ; 
+@atan2[weight = 1, style = filled]
+@_ZN11OrientationC2Efff -> @atan2 ; 
+}

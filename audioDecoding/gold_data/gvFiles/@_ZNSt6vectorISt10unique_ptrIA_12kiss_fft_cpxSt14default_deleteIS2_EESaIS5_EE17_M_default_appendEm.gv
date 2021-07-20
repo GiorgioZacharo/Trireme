@@ -1,0 +1,11 @@
+digraph "@_ZNSt6vectorISt10unique_ptrIA_12kiss_fft_cpxSt14default_deleteIS2_EESaIS5_EE17_M_default_appendEm" {
+@_ZNSt6vectorISt10unique_ptrIA_12kiss_fft_cpxSt14default_deleteIS2_EESaIS5_EE17_M_default_appendEm[weight = 1, style = filled]
+@_ZSt20__throw_length_errorPKc[weight = 1, style = filled]
+@_ZNSt6vectorISt10unique_ptrIA_12kiss_fft_cpxSt14default_deleteIS2_EESaIS5_EE17_M_default_appendEm -> @_ZSt20__throw_length_errorPKc ; 
+@_Znwm[weight = 1, style = filled]
+@_ZNSt6vectorISt10unique_ptrIA_12kiss_fft_cpxSt14default_deleteIS2_EESaIS5_EE17_M_default_appendEm -> @_Znwm ; 
+@_ZdaPv[weight = 1, style = filled]
+@_ZNSt6vectorISt10unique_ptrIA_12kiss_fft_cpxSt14default_deleteIS2_EESaIS5_EE17_M_default_appendEm -> @_ZdaPv ; 
+@_ZdlPv[weight = 1, style = filled]
+@_ZNSt6vectorISt10unique_ptrIA_12kiss_fft_cpxSt14default_deleteIS2_EESaIS5_EE17_M_default_appendEm -> @_ZdlPv ; 
+}

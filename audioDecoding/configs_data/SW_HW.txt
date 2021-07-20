@@ -1,0 +1,14 @@
+@zoomProcess_fxp_cloned	145919600	26505000
+@psychoFilter_fxp_cloned	132296900	13216200
+@rotateOrder3_fxp_cloned	80580400	3696400
+@FIR_right_fxp_cloned	67920600	6771800
+@FIR_left_fxp_cloned	67920600	6771800
+@IFFT_right_fxp_cloned	41698500	6418500
+@IFFT_left_fxp_cloned	41698500	6418500
+@rotateOrder2_fxp_cloned	33174800	2672400
+@rotateOrder1_fxp_cloned	10956500	1750800
+@overlap_right_fxp_cloned	4095800	3487200
+@overlap_left_fxp_cloned	4095800	3487200
+@setAndFFT_right_fxp_cloned	32900	3288500
+@setAndFFT_left_fxp_cloned	32900	3288500
+@rotatorSet_fxp_cloned	10800	25200
