@@ -11,3 +11,16 @@ If you use Trireme in your research, we would appreciate a citation to:
 # Installation
 
 First we need to install all necessary tools. (LLVM8 and AccelSeeker Analysis passes)
+## Getting source code and building HPVM
+
+Checkout HPVM:
+```shell
+git clone https://gitlab.engr.illinois.edu/llvm/hpvm-release.git/
+cd hpvm-release/hpvm
+```
+
+HPVM installer script can be used to download, configure and build HPVM along with LLVM and Clang. 
+```shell
+bash install.sh [flags]
+```
+
