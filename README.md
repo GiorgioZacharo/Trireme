@@ -23,4 +23,59 @@ HPVM installer script can be used to download, configure and build HPVM along wi
 ```shell
 bash install.sh [flags]
 ```
+All necessary files containing the analysis passes need to be copied to the LLVM9 source tree of HPVM. 
+ 
+    ./bootstrap_AS_passes.sh
 
+LLVM9 can then be recompiled using make and a new Shared Object (SO) should be created in order to load the AccelSeeker passes.
+
+    cd "hpvm/hpvm/build" && make
+
+# Usage
+
+For testing, audio decoder https://github.com/adsc-hls/synthesizable_h264 synthesizable version by Xinheng Liu et al of University of Illinois at Urbana-Champaign is used.
+
+    cd h264_decoder
+
+### 1) Collect dynamic profiling information and generate the annotated  Intermediate Representation (IR) files.
+
+    cd sim
+
+We make sure that the LLVM lines in "Makefile_AccelSeeker" point to the path of the LLVM8 build and lib directory:    
+
+    BIN_DIR_LLVM=path/to/llvm/build/bin
+    LIB_DIR_LLVM=path/to/llvm/build/lib
+
+Then we run the instrumented binary with the appropriate input parameters and generate the annotated IR files using
+the profiling information.    
+
+    make profile
+
+### 2) Identification of candidates for acceleration and estimation of Latency, Area and I/O requirements.   
+
+We make sure that the LLVM_BUILD line in "run_sys_aw.sh" points to the path of the LLVM8 build directory:
+
+    LLVM_BUILD=path/to/llvm/build
+
+The following script invokes the AccelSeeker Analysis passes and generates the files needed to construct the final Merit/Cost estimation.
+The files generated are: FCI.txt  IO.txt  LA.txt 
+    
+    ./run_sys_aw.sh
+
+
+### 3) Merit, Cost Estimation of candidates for acceleration and application of the Overlapping Rule.
+
+The following script generates the Merit/Cost (MC) file along with the implementation of the Overlapping rule in the final Merit/Cost/Indexes (MCI) file.
+The files generated are: MCI.txt  MC.txt
+
+    ./generate_accelcands_list.sh
+
+The MCI.txt format is as follows:
+
+BENCHMARK-NAME ACCELERATOR-NAME MERIT(CYCLES SAVED) COST(LUTS) FUNCTION_INDEXES
+
+** Modifications are needed to comply for every benchmark. **
+
+# Author
+
+Georgios Zacharopoulos georgios@seas.harvard.edu Date: July, 2021
