@@ -10,7 +10,8 @@ If you use Trireme in your research, we would appreciate a citation to:
 
 # Installation
 
-First we need to install all necessary tools. (LLVM8 and AccelSeeker Analysis passes)
+First we need to install all necessary tools. (HPVM/LLVM9 and AccelSeeker Analysis passes)
+
 ## Getting source code and building HPVM
 
 Checkout HPVM:
@@ -23,25 +24,27 @@ HPVM installer script can be used to download, configure and build HPVM along wi
 ```shell
 bash install.sh [flags]
 ```
+## AccelSeeker Analysis Passes
+
 All necessary files containing the analysis passes need to be copied to the LLVM9 source tree of HPVM. 
  
     ./bootstrap_AS_passes.sh
 
 LLVM9 can then be recompiled using make and a new Shared Object (SO) should be created in order to load the AccelSeeker passes.
 
-    cd "hpvm/hpvm/build" && make
+    cd hpvm/hpvm/build && make
 
 # Usage
 
-For testing, audio decoder https://github.com/adsc-hls/synthesizable_h264 synthesizable version by Xinheng Liu et al of University of Illinois at Urbana-Champaign is used.
+For testing, audio decoder https://github.com/ILLIXR/audio_pipeline from the [ILLIXR](https://github.com/ILLIXR/ILLIXR), the Illinois Extended Reality testbed, of University of Illinois at Urbana-Champaign is used. The audio pipeline is responsible for both recording and playing back spatialized audio for XR.
 
-    cd h264_decoder
+    cd audioDecoding
 
 ### 1) Collect dynamic profiling information and generate the annotated  Intermediate Representation (IR) files.
 
     cd sim
 
-We make sure that the LLVM lines in "Makefile_AccelSeeker" point to the path of the LLVM8 build and lib directory:    
+We make sure that the LLVM lines in "Makefile_AccelSeeker" point to the path of the LLVM9 build and lib directory:    
 
     BIN_DIR_LLVM=path/to/llvm/build/bin
     LIB_DIR_LLVM=path/to/llvm/build/lib
