@@ -36,7 +36,7 @@ Note that it is necessary to source the script in order for the environment vari
 bash install.sh -c -d ./hpvm -j N
 source set_paths.sh
 ```
-This will clone and install HPVM under `Trireme/hpvm`. Then copy `hpvm-trireme` int `hpvm/hpvm/projects` and build HPVM with Trireme. You can replace `./hpvm` with any alternative relative or absolute path that will be used as the root of the HPVM repo. `N` has to be set to the desired number of threads.
+This will clone and install HPVM under `Trireme/hpvm`. Then it will copy `hpvm-trireme` into `hpvm/hpvm/projects` and build HPVM with Trireme. You can replace `./hpvm` with any alternative relative or absolute path that will be used as the root of the HPVM repo. `N` has to be set to the desired number of threads.
 
 ### If HPVM is already installed
 ```shell
