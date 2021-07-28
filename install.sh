@@ -89,10 +89,10 @@ if [[ $CLONE_HPVM == true ]]; then
 fi
 
 cd $CUR_DIR
-if [[ $(diff -r ./hpvm-trireme $HPVM_DIR/hpvm/projects/hpvm-trireme) ]]; then
-  echo "Copying hpvm-trireme into HPVM source tree..."
-  cp -r $CUR_DIR/hpvm-trireme $HPVM_DIR/hpvm/projects
-fi
+echo "Copying hpvm-trireme into HPVM source tree..."
+echo "----------------------------------------------------------"
+rsync -av --progress $CUR_DIR/hpvm-trireme $HPVM_DIR/hpvm/projects
+echo "----------------------------------------------------------"
 echo "Patching HPVM source files..."
 export HPVM_SRC_ROOT=$HPVM_DIR/hpvm
 bash ./hpvm_patches/patch_hpvm.sh
