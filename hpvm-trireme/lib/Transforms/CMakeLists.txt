@@ -1,0 +1,3 @@
+add_subdirectory(ClearProf)
+add_subdirectory(AccelSeeker)
+add_subdirectory(AccelSeekerIO)
