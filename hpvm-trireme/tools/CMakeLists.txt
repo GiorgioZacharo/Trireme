@@ -1,1 +1,1 @@
-add_llvm_tool_subdirectory(hpvm-trireme)
+add_subdirectory(hpvm-trireme)
