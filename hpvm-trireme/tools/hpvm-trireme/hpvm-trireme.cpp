@@ -10,6 +10,8 @@
 
 #define DEBUG_TYPE "hpvm-trireme"
 #include "hpvm-trireme.h"
+#include "BuildDFG/BuildDFG.h"
+#include "SupportHPVM/HPVMUtils.h"
 #include "llvm/IR/LLVMContext.h"
 #include "llvm/IR/LegacyPassManager.h"
 #include "llvm/IRReader/IRReader.h"
@@ -18,12 +20,10 @@
 #include "llvm/Support/SourceMgr.h"
 #include "llvm/Support/SystemUtils.h"
 #include "llvm/Support/ToolOutputFile.h"
-#include "BuildDFG/BuildDFG.h"
-#include "SupportHPVM/HPVMUtils.h"
-#include <iostream>
-#include <fstream>
-#include <string>
 #include <cxxabi.h>
+#include <fstream>
+#include <iostream>
+#include <string>
 
 using namespace llvm;
 using namespace builddfg;
@@ -42,6 +42,13 @@ static cl::opt<string>
 static cl::opt<string>
     InputFNList(cl::Positional, cl::desc("<input function list (.txt)>"),
                 cl::Required, cl::value_desc("input function list file name"));
+
+// -independent-dfgs - Declare that all DFGs in application are independent.
+static cl::opt<bool>
+    IndepDFGs("independent-dfgs",
+              cl::desc("Specifies that the DFGs in this application are all "
+                       "independent. Defaults to false."),
+              cl::init(false));
 
 // OutputFName - The name to be used for the first output file.
 static cl::opt<string>
@@ -321,23 +328,28 @@ int main(int argc, char **argv) {
   vector<DFInternalNode *> SortedRoots(Roots.size(), 0);
 
   if (Roots.size() > 1 && Roots[0]->getFuncPointer()->getName().contains(
-          "set_calibration_undistort")) {
+                              "set_calibration_undistort")) {
     for (auto *Root : Roots) {
       auto RootName = Root->getFuncPointer()->getName();
       if (RootName.contains("feed_stereo_updateDB")) {
-        assert(SortedRoots[0]==nullptr && "Root 0 has already been filled!\n");
+        assert(SortedRoots[0] == nullptr &&
+               "Root 0 has already been filled!\n");
         SortedRoots[0] = Root;
       } else if (RootName.contains("EKFUpdateGraph_1")) {
-        assert(SortedRoots[1]==nullptr && "Root 1 has already been filled!\n");
+        assert(SortedRoots[1] == nullptr &&
+               "Root 1 has already been filled!\n");
         SortedRoots[1] = Root;
       } else if (RootName.contains("EKFUpdateGraph_2")) {
-        assert(SortedRoots[2]==nullptr && "Root 2 has already been filled!\n");
+        assert(SortedRoots[2] == nullptr &&
+               "Root 2 has already been filled!\n");
         SortedRoots[2] = Root;
-      }else if (RootName.contains("EKFUpdateGraph_3")) {
-        assert(SortedRoots[3]==nullptr && "Root 3 has already been filled!\n");
+      } else if (RootName.contains("EKFUpdateGraph_3")) {
+        assert(SortedRoots[3] == nullptr &&
+               "Root 3 has already been filled!\n");
         SortedRoots[3] = Root;
       } else if (RootName.contains("set_calibration_undistort")) {
-        assert(SortedRoots[4]==nullptr && "Root 4 has already been filled!\n");
+        assert(SortedRoots[4] == nullptr &&
+               "Root 4 has already been filled!\n");
         SortedRoots[4] = Root;
       }
     }
@@ -346,7 +358,8 @@ int main(int argc, char **argv) {
   }
   int i = 0;
   for (auto *Root : SortedRoots) {
-    DEBUG(errs() << "Root " << i++ << ": " << Root->getFuncPointer()->getName() << "\n");
+    DEBUG(errs() << "Root " << i++ << ": " << Root->getFuncPointer()->getName()
+                 << "\n");
   }
 
   // Create a maping from the input function names
@@ -363,15 +376,30 @@ int main(int argc, char **argv) {
 
   // calculate the early start time of each node
   map<DFNode *, float> SWNodeEST, SWNodeEFT, HWNodeEST, HWNodeEFT;
-  SWNodeEST[SortedRoots[0]] = 0.0;
-  HWNodeEST[SortedRoots[0]] = 0.0;
-  calculateChildGraphEST(SortedRoots[0], SWNodeDuration, SWNodeEFT, SWNodeEST);
-  calculateChildGraphEST(SortedRoots[0], HWNodeDuration, HWNodeEFT, HWNodeEST);
-  for (int i = 1; i < SortedRoots.size(); ++i) {
-    SWNodeEST[SortedRoots[i]] = SWNodeEFT[SortedRoots[i - 1]];
-    HWNodeEST[SortedRoots[i]] = HWNodeEFT[SortedRoots[i - 1]];
-    calculateChildGraphEST(SortedRoots[i], SWNodeDuration, SWNodeEFT, SWNodeEST);
-    calculateChildGraphEST(SortedRoots[i], HWNodeDuration, HWNodeEFT, HWNodeEST);
+  if (!IndepDFGs) {
+    SWNodeEST[SortedRoots[0]] = 0.0;
+    HWNodeEST[SortedRoots[0]] = 0.0;
+    calculateChildGraphEST(SortedRoots[0], SWNodeDuration, SWNodeEFT,
+                           SWNodeEST);
+    calculateChildGraphEST(SortedRoots[0], HWNodeDuration, HWNodeEFT,
+                           HWNodeEST);
+    for (int i = 1; i < SortedRoots.size(); ++i) {
+      SWNodeEST[SortedRoots[i]] = SWNodeEFT[SortedRoots[i - 1]];
+      HWNodeEST[SortedRoots[i]] = HWNodeEFT[SortedRoots[i - 1]];
+      calculateChildGraphEST(SortedRoots[i], SWNodeDuration, SWNodeEFT,
+                             SWNodeEST);
+      calculateChildGraphEST(SortedRoots[i], HWNodeDuration, HWNodeEFT,
+                             HWNodeEST);
+    }
+  } else {
+    for (int i = 0; i < SortedRoots.size(); ++i) {
+      SWNodeEST[SortedRoots[i]] = 0.0;
+      HWNodeEST[SortedRoots[i]] = 0.0;
+      calculateChildGraphEST(SortedRoots[i], SWNodeDuration, SWNodeEFT,
+                             SWNodeEST);
+      calculateChildGraphEST(SortedRoots[i], HWNodeDuration, HWNodeEFT,
+                             HWNodeEST);
+    }
   }
   dumpMap(SWNodeEST);
   dumpMap(SWNodeEFT);
@@ -384,10 +412,8 @@ int main(int argc, char **argv) {
     if (FNameToNodeMap.find(FName) != FNameToNodeMap.end()) {
       vector<string> ESTVec;
       ESTVec.push_back("@" + FName);
-      ESTVec.push_back(
-          std::to_string(SWNodeEST[FNameToNodeMap[FName]]));
-      ESTVec.push_back(
-          std::to_string(HWNodeEST[FNameToNodeMap[FName]]));
+      ESTVec.push_back(std::to_string(SWNodeEST[FNameToNodeMap[FName]]));
+      ESTVec.push_back(std::to_string(HWNodeEST[FNameToNodeMap[FName]]));
       dumpVector(ESTVec);
       EST.push_back(ESTVec);
     }
