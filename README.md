@@ -10,29 +10,40 @@ If you use Trireme in your research, we would appreciate a citation to:
 
 # Installation
 
-First we need to install all necessary tools. (HPVM/LLVM9 and AccelSeeker Analysis passes)
+Tireme comes with an automated installer that installs the HPVM compiler then sets up Trireme as a sub-project in HPVM. The installer also has an option to use an existing HPVM installation.
 
-## Getting source code and building HPVM
-
-Checkout HPVM:
-```shell
-git clone https://gitlab.engr.illinois.edu/llvm/hpvm-release.git/
-cd hpvm-release/hpvm
-```
-
-HPVM installer script can be used to download, configure and build HPVM along with LLVM and Clang. 
+To install Trireme:
 ```shell
 bash install.sh [flags]
+[flags]:
+  -c  Clone HPVM automatically and run its install script.
+  -d  Location of HPVM repo (if available) or where HPVM 
+      repo will be cloned (if -c provided). REQUIRED.
+  -j  Specifies how many threads to use when running make.
+  -p  Add environment variable exports to bashrc.
+  -h  Prints the help message.
 ```
-## AccelSeeker Analysis Passes
 
-All necessary files containing the analysis passes need to be copied to the LLVM9 source tree of HPVM. 
- 
-    ./bootstrap_AS_passes.sh
+The install script will generate a `set_paths.sh` script which needs to be sourced to set required environment variables before running any Trireme components. This can be done using:
+```shell
+source set_paths.sh
+```
+Note that it is necessary to source the script in order for the environment variables to get updated in the main shell.
 
-LLVM9 can then be recompiled using make and a new Shared Object (SO) should be created in order to load the AccelSeeker passes.
+## Suggested Installation Options
+### If HPVM is not already installed
+```shell
+bash install.sh -c -d ./hpvm -j N
+source set_paths.sh
+```
+This will clone and install HPVM under `Trireme/hpvm`. Then copy `hpvm-trireme` int `hpvm/hpvm/projects` and build HPVM with Trireme. You can replace `./hpvm` with any alternative relative or absolute path that will be used as the root of the HPVM repo. `N` has to be set to the desired number of threads.
 
-    cd hpvm/hpvm/build && make
+### If HPVM is already installed
+```shell
+bash install.sh -d path/to/your/hpvm -j N
+source set_paths.sh
+```
+This will set up the Trireme components in your existing HPVM repo. The path provided to the script has to be the root of the HPVM repository (i.e. the folder that contains `hpvm` directory). As above, set `N` to the desired number of threads to be used for building HPVM.
 
 # Usage
 
