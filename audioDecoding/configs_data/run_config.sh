@@ -21,8 +21,6 @@ cp LA.txt LA.LLVM.txt
 ./filter_mci.sh MCI.txt
 cp MCI.txt MCI.llvm.txt
 
-#exit 0;
-
 # Task Level Parallelism Estimation.
 ./compute_sw_hw.sh $ALPHA $OVHD
 ./remove_fractional_point.sh SW_HW_AREA.txt
@@ -32,7 +30,6 @@ cp MCI.txt.orig MCI.tlp.txt
 ./filter_mci.sh MCI.tlp.txt
 cat MCI_tlp_opt.txt >> MCI.tlp.txt
 
-#exit 0;
 #Loop Level Parallelism Estimation.
 ./update_io.sh; ./update_fci.sh 
 ./extract_llp.sh 
@@ -47,7 +44,6 @@ cp MCI.txt MCI.llp.txt; cp FCI.txt.orig FCI.txt;
 ./remove_fractional_point.sh LA_HPVM_LLP.txt
 ./extract_tlp-llp.sh  $BENCH
 ./filter_mci.sh MCI_tlp_llp_opt.txt
-#cp MCI.txt.orig MCI.tlp-llp.txt
 cp MCI.tlp.txt MCI.tlp-llp.txt
 ./filter_mci.sh MCI.tlp-llp.txt
 cat MCI_tlp_llp_opt.txt >> MCI.tlp-llp.txt

@@ -7,6 +7,7 @@ selection algorithm selects the subset of HW accelerators that maximizes perform
 defined area (HW resources) budget.
 
 If you use Trireme in your research, we would appreciate a citation to:
+*TBD*
 
 # Installation
 
@@ -43,6 +44,7 @@ For testing, audio decoder https://github.com/ILLIXR/audio_pipeline from the [IL
 ### 1) Collect dynamic profiling information and generate the annotated  Intermediate Representation (IR) files.
 
     cd sim
+    ./prof_gen.sh hpvm-gemm-blocked
 
 We make sure that the LLVM lines in "Makefile_AccelSeeker" point to the path of the LLVM9 build and lib directory:    
 
@@ -53,6 +55,8 @@ Then we run the instrumented binary with the appropriate input parameters and ge
 the profiling information.    
 
     make profile
+
+The script generates the IR .ll file required by the next step of the Trireme analysis.
 
 ### 2) Identification of candidates for acceleration and estimation of Latency, Area and I/O requirements.   
 

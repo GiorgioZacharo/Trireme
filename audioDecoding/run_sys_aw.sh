@@ -45,6 +45,8 @@ done
 cp LA_$TOP_LEVEL.txt LA.txt; mkdir analysis_data; mv SW_*.txt HW_*.txt AREA_*.txt LA_*.txt analysis_data/.  
 rm level.txt
 
+$LLVM_BUILD/hpvm-accelseeker $BENCH input_task_list.txt
+
 exit 0;
 
 # Delete all data files produced.
