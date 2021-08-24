@@ -1,7 +1,0 @@
-digraph "@_GLOBAL__sub_I_main.cpp" {
-@_GLOBAL__sub_I_main.cpp[weight = 1, style = filled]
-@_ZNSt8ios_base4InitC1Ev[weight = 1, style = filled]
-@_GLOBAL__sub_I_main.cpp -> @_ZNSt8ios_base4InitC1Ev ; 
-@__cxa_atexit[weight = 1, style = filled]
-@_GLOBAL__sub_I_main.cpp -> @__cxa_atexit ; 
-}

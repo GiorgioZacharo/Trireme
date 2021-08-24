@@ -1,9 +1,0 @@
-digraph "@_ZN17CAmbisonicDecoderD2Ev" {
-@_ZN17CAmbisonicDecoderD2Ev[weight = 1, style = filled]
-@_ZdlPv[weight = 1, style = filled]
-@_ZN17CAmbisonicDecoderD2Ev -> @_ZdlPv ; 
-@_ZdlPv[weight = 1, style = filled]
-@_ZN17CAmbisonicDecoderD2Ev -> @_ZdlPv ; 
-@_ZdaPv[weight = 1, style = filled]
-@_ZN17CAmbisonicDecoderD2Ev -> @_ZdaPv ; 
-}

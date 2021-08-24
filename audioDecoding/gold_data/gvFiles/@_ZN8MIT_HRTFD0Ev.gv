@@ -1,5 +1,0 @@
-digraph "@_ZN8MIT_HRTFD0Ev" {
-@_ZN8MIT_HRTFD0Ev[weight = 1, style = filled]
-@_ZdlPv[weight = 1, style = filled]
-@_ZN8MIT_HRTFD0Ev -> @_ZdlPv ; 
-}

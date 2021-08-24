@@ -1,5 +1,0 @@
-digraph "@_ZN17CAmbisonicDecoder11GetPositionEj" {
-@_ZN17CAmbisonicDecoder11GetPositionEj[weight = 1, style = filled]
-%3[weight = 1, style = filled]
-@_ZN17CAmbisonicDecoder11GetPositionEj -> %3 ; 
-}

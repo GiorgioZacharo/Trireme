@@ -1,5 +1,0 @@
-digraph "@_ZN17CAmbisonicDecoder14GetOrderWeightEjj" {
-@_ZN17CAmbisonicDecoder14GetOrderWeightEjj[weight = 1, style = filled]
-%3[weight = 1, style = filled]
-@_ZN17CAmbisonicDecoder14GetOrderWeightEjj -> %3 ; 
-}

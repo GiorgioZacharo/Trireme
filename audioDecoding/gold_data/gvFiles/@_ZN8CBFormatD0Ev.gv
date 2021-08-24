@@ -1,9 +1,0 @@
-digraph "@_ZN8CBFormatD0Ev" {
-@_ZN8CBFormatD0Ev[weight = 1, style = filled]
-@_ZdaPv[weight = 1, style = filled]
-@_ZN8CBFormatD0Ev -> @_ZdaPv ; 
-@_ZdlPv[weight = 1, style = filled]
-@_ZN8CBFormatD0Ev -> @_ZdlPv ; 
-@_ZdlPv[weight = 1, style = filled]
-@_ZN8CBFormatD0Ev -> @_ZdlPv ; 
-}

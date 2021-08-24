@@ -1,7 +1,0 @@
-digraph "@__clang_call_terminate" {
-@__clang_call_terminate[weight = 1, style = filled]
-@__cxa_begin_catch[weight = 1, style = filled]
-@__clang_call_terminate -> @__cxa_begin_catch ; 
-@_ZSt9terminatev[weight = 1, style = filled]
-@__clang_call_terminate -> @_ZSt9terminatev ; 
-}

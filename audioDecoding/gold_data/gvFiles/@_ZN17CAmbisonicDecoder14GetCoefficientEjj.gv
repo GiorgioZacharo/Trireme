@@ -1,5 +1,0 @@
-digraph "@_ZN17CAmbisonicDecoder14GetCoefficientEjj" {
-@_ZN17CAmbisonicDecoder14GetCoefficientEjj[weight = 1, style = filled]
-%3[weight = 1, style = filled]
-@_ZN17CAmbisonicDecoder14GetCoefficientEjj -> %3 ; 
-}

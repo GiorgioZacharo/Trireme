@@ -1,7 +1,0 @@
-digraph "@rotateOrder3_fxp_cloned" {
-@rotateOrder3_fxp_cloned[weight = 1, style = filled]
-@pow[weight = 1, style = filled]
-@rotateOrder3_fxp_cloned -> @pow ; 
-@pow[weight = 1, style = filled]
-@rotateOrder3_fxp_cloned -> @pow ; 
-}

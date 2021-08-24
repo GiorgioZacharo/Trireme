@@ -1,5 +1,0 @@
-digraph "@_ZN16CAmbisonicZoomer7RefreshEv" {
-@_ZN16CAmbisonicZoomer7RefreshEv[weight = 1, style = filled]
-@sqrtf[weight = 1, style = filled]
-@_ZN16CAmbisonicZoomer7RefreshEv -> @sqrtf ; 
-}

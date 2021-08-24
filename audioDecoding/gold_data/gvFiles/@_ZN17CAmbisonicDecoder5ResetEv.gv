@@ -1,5 +1,0 @@
-digraph "@_ZN17CAmbisonicDecoder5ResetEv" {
-@_ZN17CAmbisonicDecoder5ResetEv[weight = 1, style = filled]
-%4[weight = 1, style = filled]
-@_ZN17CAmbisonicDecoder5ResetEv -> %4 ; 
-}
