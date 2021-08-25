@@ -45,9 +45,12 @@ done
 cp LA_$TOP_LEVEL.txt LA.txt; mkdir analysis_data; mv SW_*.txt HW_*.txt AREA_*.txt LA_*.txt analysis_data/.  
 rm level.txt
 
+# Generate the SW-HW tasks file used as input for the parallelism extraction tool.
+$SCRIPTS_DIR/compute_sw_hw_tasks.sh
+# Parallelism extraction tool. Input: IR (.ll) file of application and the SW-HW tasks file.
+$LLVM_BUILD/bin/hpvm-accelseeker $BENCH SW_HW.txt
 
 exit 0;
-$LLVM_BUILD/bin/hpvm-accelseeker $BENCH input_task_list.txt
 
 # Delete all data files produced.
 rm *.txt; rm -r gvFiles
