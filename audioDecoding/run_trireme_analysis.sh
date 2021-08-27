@@ -11,7 +11,11 @@ set -e
 
 # Start Editing.
 # LLVM build directory - Edit this line. LLVM_BUILD=path/to/llvm/build
-LLVM_BUILD=../hpvm/hpvm/build
+#LLVM_BUILD=../hpvm/hpvm/build
+LLVM_BUILD=../..//hpvm/hpvm/build
+
+# Scripts directory - Edit this line if the scripts directory has been moved.
+export SCRIPTS_DIR=../scripts
 
 # BENCH NAME - Edit this line to use it to another benchmark/application.
 BENCH=main.hpvm.ll
@@ -45,10 +49,15 @@ done
 cp LA_$TOP_LEVEL.txt LA.txt; mkdir analysis_data; mv SW_*.txt HW_*.txt AREA_*.txt LA_*.txt analysis_data/.  
 rm level.txt
 
+# Keep the top performing tasks from the entire analysis.
+$SCRIPTS_DIR/filter_la_file.sh
 # Generate the SW-HW tasks file used as input for the parallelism extraction tool.
 $SCRIPTS_DIR/compute_sw_hw_tasks.sh
 # Parallelism extraction tool. Input: IR (.ll) file of application and the SW-HW tasks file.
 $LLVM_BUILD/bin/hpvm-accelseeker $BENCH SW_HW.txt
+# Keep the integer values of the SW-HW Latencies for simplicity.
+$SCRIPTS_DIR/remove_fractional_point.sh earliest_start.txt
+$SCRIPTS_DIR/remove_fractional_point.sh earliest_start.txt
 
 exit 0;
 

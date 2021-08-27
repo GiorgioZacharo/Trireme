@@ -2,7 +2,7 @@
 
 rm SW_HW.txt 
 
-SCRIPTS_DIR=scripts
+#SCRIPTS_DIR=scripts
 
 ALPHA=0.1        #  Based on Memory Hierarchy of the Architecture.
 OVERHEAD=100     # Overhead per invocation. #decode
@@ -24,7 +24,7 @@ while read FUNC_NAME SW_LATENCY HW_LATENCY AREA INVOCATIONS ; do # LA.txt
 
 		fi
 		
-		printf "$FUNC_NAME\t$SW_LATENCY\t$HW_LATENCY_TOTAL\n" >> SW_HW.txt
+		printf "$FUNC_NAME $SW_LATENCY $HW_LATENCY_TOTAL\n" >> SW_HW.txt
 	fi
 
     done<IO.txt
