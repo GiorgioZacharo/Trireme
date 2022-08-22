@@ -15,16 +15,8 @@ First we need to install all necessary tools. (HPVM/LLVM9 and AccelSeeker Analys
 
 ## Getting source code and building HPVM
 
-Checkout HPVM:
-```shell
-git clone https://gitlab.engr.illinois.edu/llvm/hpvm-release.git/
-cd hpvm-release/hpvm
-```
+Download HPVM v0.5 from the [HPVM releases page](https://gitlab.engr.illinois.edu/llvm/hpvm-release/-/releases), then follow the instructions in the downloaded Readme for installing HPVM.
 
-HPVM installer script can be used to download, configure and build HPVM along with LLVM and Clang. 
-```shell
-bash install.sh [flags]
-```
 ## AccelSeeker Analysis Passes
 
 All necessary files containing the analysis passes need to be copied to the LLVM9 source tree of HPVM. 
